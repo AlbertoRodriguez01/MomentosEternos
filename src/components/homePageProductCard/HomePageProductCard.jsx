@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const productData = [
     {
         id: 1,
-        image: 'src/assets/img/ramos/1.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/ramos%2F1.jpg?alt=media&token=fd97356e-8638-4075-9691-f86031fcaccc',
         title: 'Tulipan amarillo crochet',
         desc: 'Tulipan amarillo tejido a mano con estambre.',
         price: 200,
@@ -13,7 +13,7 @@ const productData = [
     },
     {
         id: 2,
-        image: 'src/assets/img/ramos/2.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/ramos%2F2.jpg?alt=media&token=4c2b80ea-bcdf-41d7-8721-7426dd4ed420',
         title: 'Ramo de tulipanes crochet',
         desc: 'Ramo de tulipanes tejidos a mano.',
         price: 250,
@@ -22,7 +22,7 @@ const productData = [
     },
     {
         id: 3,
-        image: 'src/assets/img/ramos/3.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/ramos%2F3.jpg?alt=media&token=cb27efa6-837d-49f4-afbc-3afd6d9e563d',
         title: 'Ramo de Hello Kitty',
         desc: 'Ramo de 50 rosas de liston con forma de Hello Kitty',
         price: 350,
@@ -31,7 +31,7 @@ const productData = [
     },
     {
         id: 4,
-        image: 'src/assets/img/ramos/4.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/ramos%2F4.jpg?alt=media&token=6899bd77-f3fa-4eec-9f55-0a053fec8285',
         title: 'Ramo de Dragon Ball',
         desc: 'Ramo de 50 rosas con diseño de Dragon Ball',
         price: 350,
@@ -40,7 +40,7 @@ const productData = [
     },
     {
         id: 1,
-        image: 'src/assets/img/munecos/9.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/munecos%2F9.jpg?alt=media&token=3778795e-9ebc-43f6-b125-303fafc05a05',
         title: 'Muñeco de Goku',
         desc: 'Muñeco de Goku de Dragon Ball tejido a mano.',
         price: 150,
@@ -49,7 +49,7 @@ const productData = [
     },
     {
         id: 2,
-        image: 'src/assets/img/munecos/15.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/munecos%2F15.jpg?alt=media&token=8452543d-fb0c-445b-928f-53e0ee0f41c5',
         title: 'Muñeco de Batman',
         desc: 'Muñeco de Batman tejido a mano.',
         price: 100,
@@ -58,7 +58,7 @@ const productData = [
     },
     {
         id: 3,
-        image: 'src/assets/img/munecos/8.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/munecos%2F8.jpg?alt=media&token=78a05213-10d7-43c8-83c9-cec55937bcbc',
         title: 'Muñeco de Spiderman',
         desc: 'Muñeco de Spiderman tejido a mano.',
         price: 150,
@@ -67,7 +67,7 @@ const productData = [
     },
     {
         id: 4,
-        image: 'src/assets/img/munecos/16.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/munecos%2F16.jpg?alt=media&token=7b0c9d30-1833-4c76-a179-adc6525aea75',
         title: 'Going Merry One Piece',
         desc: 'Barco del anime One Piece tejido a mano.',
         price: 300,
