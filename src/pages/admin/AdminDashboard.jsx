@@ -12,7 +12,7 @@ const AdminDashboard = () => {
             {/* Top */}
             <div className="top mb-5 px-5 mt-5">
                 <div className=" bg-pink-50 py-5 border border-pink-100 rounded-lg">
-                    <h1 className=" text-center text-2xl font-bold text-pink-500">Admin Dashboard</h1>
+                    <h1 className=" text-center text-2xl font-bold text-pink-500">Tablero de administrador</h1>
                 </div>
             </div>
 
@@ -65,7 +65,7 @@ const AdminDashboard = () => {
 
                                     </div>
                                     <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >10</h2>
-                                    <p className=" text-pink-500  font-bold" >Total Products</p>
+                                    <p className=" text-pink-500  font-bold" >Total de productos</p>
                                 </div>
                             </Tab>
 
@@ -94,7 +94,7 @@ const AdminDashboard = () => {
                                         </svg>
                                     </div>
                                     <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >10</h2>
-                                    <p className=" text-pink-500  font-bold" >Total Order</p>
+                                    <p className=" text-pink-500  font-bold" >Total de ordenes</p>
                                 </div>
                             </Tab>
 
@@ -122,7 +122,7 @@ const AdminDashboard = () => {
 
                                     </div>
                                     <h2 className="title-font font-medium text-3xl text-pink-400 fonts1" >10</h2>
-                                    <p className=" text-pink-500  font-bold" >Total User</p>
+                                    <p className=" text-pink-500  font-bold" >Total de usuarios</p>
                                 </div>
                             </Tab>
                         </TabList>
