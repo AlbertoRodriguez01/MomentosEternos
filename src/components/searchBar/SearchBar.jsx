@@ -4,11 +4,11 @@ import { useState } from "react";
 const searchData = [
   {
       name: 'Ramos Eternos',
-      image: 'src/assets/img/ramo.jpg'
+      image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/ramo.jpg?alt=media&token=ef413ebd-6ef5-49b6-8ed4-6f66b90bd62c'
   },
   {
       name: 'Amigurumis',
-      image: 'src/assets/img/amigurumis.jpg'
+      image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/amigurumis.jpg?alt=media&token=84c60bf8-29ca-4164-a727-2d742103f8e5'
   }
 ]
 
