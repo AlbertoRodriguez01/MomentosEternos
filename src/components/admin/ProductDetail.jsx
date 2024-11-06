@@ -7,7 +7,7 @@ const ProductDetail = () => {
                 {/* text  */}
                 <h1 className=" text-xl text-pink-300 font-bold">All Product</h1>
                  {/* Add Product Button  */}
-                <Link to={'/addproduct'}>
+                <Link to={'/nopage'}>
                     <button className="px-5 py-2 bg-pink-50 border border-pink-100 rounded-lg">Add Product</button>
                 </Link>
             </div>
