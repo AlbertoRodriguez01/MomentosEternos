@@ -23,7 +23,7 @@ const Navbar = () => {
 
             {/* Todos los Productos */}
             <li>
-                <Link to={'/allproduct'}>Todos los productos</Link>
+                <Link to={'/nopage'}>Todos los productos</Link>
             </li>
 
             {/* Signup */}
@@ -52,7 +52,7 @@ const Navbar = () => {
             </li>}
             {/* Carrito */}
             <li>
-                <Link to={'/cart'}>
+                <Link to={'/nopage'}>
                     Carrito(0)
                 </Link>
             </li>
