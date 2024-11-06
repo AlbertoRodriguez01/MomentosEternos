@@ -1,10 +1,10 @@
 const category = [
     {
-        image: 'src/assets/img/icon1.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/icon1.jpg?alt=media&token=ed1da11e-5b3a-403d-9bd9-f58e9b7ff9f9',
         name: 'Ramos Eternos'
     },
     {
-        image: 'src/assets/img/icon2.jpg',
+        image: 'https://firebasestorage.googleapis.com/v0/b/momentos-eternos-5e14f.appspot.com/o/icon2.jpg?alt=media&token=2d353baa-38da-49e7-956e-575d284329a9',
         name: 'Amigurumis'
     }
 ]
