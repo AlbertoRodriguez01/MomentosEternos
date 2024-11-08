@@ -26,11 +26,18 @@ const Signup = () => {
     const userSignupFunction = async () => {
         // Expresión regular para validar el formato de un correo electrónico
         const emailRegex = /^[^\s@]+@(gmail\.com|hotmail\.com|yahoo\.com|saltillo\.tecnm\.mx)$/;
+
+        const nameRegex = /^[A-Za-zÁáÉéÍíÓóÚúÑñ\s]+$/;
     
         if (userSignup.name === "" || userSignup.email === "" || userSignup.password === "") {
             toast.error("Se requiere llenar todos los campos");
             return;
         }
+
+        if (!nameRegex.test(userSignup.name)) {
+        toast.error("El nombre solo debe contener letras y espacios");
+        return;
+    }
     
         if (!emailRegex.test(userSignup.email)) {
             toast.error("Por favor, introduce un correo electrónico válido");
