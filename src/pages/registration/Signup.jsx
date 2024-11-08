@@ -14,7 +14,7 @@ const Signup = () => {
     const context = useContext(myContext)
     const {loading, setLoading} = context
 
-    const navigate = useNavigate
+    const navigate = useNavigate()
 
     const [userSignup, setUserSignup] = useState({
         name: "",
@@ -24,19 +24,29 @@ const Signup = () => {
     })
 
     const userSignupFunction = async () => {
-        if(userSignup.name === "" || userSignup.email === "" || userSignup.password === "") {
-            toast.error("Se requiere llenar todos los campos")
+        // Expresión regular para validar el formato de un correo electrónico
+        const emailRegex = /^[^\s@]+@(gmail\.com|hotmail\.com|yahoo\.com|saltillo\.tecnm\.mx)$/;
+    
+        if (userSignup.name === "" || userSignup.email === "" || userSignup.password === "") {
+            toast.error("Se requiere llenar todos los campos");
+            return;
         }
-
+    
+        if (!emailRegex.test(userSignup.email)) {
+            toast.error("Por favor, introduce un correo electrónico válido");
+            return;
+        }
+    
         if (userSignup.password.length < 6) {
-            toast.error("La contraseña debe tener más de 6 caracteres")
+            toast.error("La contraseña debe tener más de 6 caracteres");
+            return;
         }
 
-        setLoading(true)
+        setLoading(true);
+    
         try {
-
-            const users = await createUserWithEmailAndPassword(auth, userSignup.email, userSignup.password)
-
+            const users = await createUserWithEmailAndPassword(auth, userSignup.email, userSignup.password);
+    
             const user = {
                 name: userSignup.name,
                 email: users.user.email,
@@ -51,29 +61,32 @@ const Signup = () => {
                         year: "numeric"
                     }
                 )
-            }
-
-            const userReference = collection(fireDB, "user")
-
-            addDoc(userReference, user)
-
+            };
+    
+            const userReference = collection(fireDB, "user");
+            await addDoc(userReference, user);
+    
             setUserSignup({
                 name: "",
                 email: "",
                 password: ""
-            })
-
-            toast.success("Registrado correctamente")
-
-            setLoading(false)
-
-            navigate('/login')
-
+            });
+    
+            toast.success("Registrado correctamente");
+            navigate('/login');
+    
         } catch (error) {
-            console.log(error)
-            setLoading(false)
+            const errorCode = error.code;
+
+            if (errorCode === 'auth/email-already-in-use') {
+                toast.error('El correo ya está en uso');
+            }
+        } finally {
+            setLoading(false);
         }
     }
+    
+    
 
     return (
         <div className='flex justify-center items-center h-screen'>
