@@ -25,7 +25,7 @@ const Signup = () => {
 
     const userSignupFunction = async () => {
         // Expresión regular para validar el formato de un correo electrónico
-        const emailRegex = /^[^\s@]+@(gmail\.com|hotmail\.com|yahoo\.com|saltillo\.tecnm\.mx)$/;
+        const emailRegex = /^[^\s@]+@(gmail\.com|hotmail\.com|yahoo\.com|saltillo\.tecnm\.mx|outlook\.com)$/;
 
         const nameRegex = /^[A-Za-zÁáÉéÍíÓóÚúÑñ\s]+$/;
     
